@@ -21,7 +21,7 @@ import java.io.Serializable;
  * Nodo de la lista doblemente encadenada
  * @param <T> Tipo de datos almacenados
  */
-public class NodoLista<T> implements Serializable, INodo<T>
+public class NodoLista<T> implements Serializable
 {
     // -----------------------------------------------------------------
     // Atributos
