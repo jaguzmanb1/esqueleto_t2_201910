@@ -1,7 +1,9 @@
 package api;
 
+import model.data_structures.ListaEncadenada;
 import model.vo.VOMovingViolations;
-import uniandes.cupi2.collections.listaEncadenada.ListaEncadenada;
+
+
 
 /**
  * Basic API for testing the functionality of the STS manager

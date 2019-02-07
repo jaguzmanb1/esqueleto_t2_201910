@@ -29,7 +29,7 @@ public class MovingViolationsManagerView
 					System.out.println("Ingrese el código de la infracción:");
 					String violationCode = sc.next();
 					ListaEncadenada<VOMovingViolations> violationsByCodeList = Controller.getMovingViolationsByViolationCode (violationCode);
-					System.out.println("Se encontraron "+ violationsByCodeList.getSize() + " elementos");
+					System.out.println("Se encontraron "+ violationsByCodeList.darLongitud() + " elementos");
 					for (VOMovingViolations violations : violationsByCodeList) 
 					{
 						System.out.println(violations.objectId() + " " + violations.getLocation() + " " + violations.getTicketIssueDate()+ " " + violations.getTotalPaid() + " " + violations.getAccidentIndicator()+ " " + violations.getViolationDescription());;

@@ -15,7 +15,7 @@ package model.data_structures;
 
 import java.io.Serializable;
 
-import uniandes.cupi2.collections.interadorSinMemoria.INodo;
+
 
 /**
  * Nodo de la lista doblemente encadenada
