@@ -1,9 +1,10 @@
 package controller;
 
 import api.IMovingViolationsManager;
-import model.data_structures.LinkedList;
+import model.data_structures.ListaEncadenada;
 import model.logic.MovingViolationsManager;
 import model.vo.VOMovingViolations;
+
 
 public class Controller {
 
@@ -17,11 +18,11 @@ public class Controller {
 		
 	}
 	
-	public static LinkedList <VOMovingViolations> getMovingViolationsByViolationCode (String violationCode) {
+	public static ListaEncadenada <VOMovingViolations> getMovingViolationsByViolationCode (String violationCode) {
 		return null;
 	}
 	
-	public static LinkedList <VOMovingViolations> getMovingViolationsByAccident(String accidentIndicator) {
+	public static ListaEncadenada<VOMovingViolations> getMovingViolationsByAccident(String accidentIndicator) {
 		return null;
 	}
 }

@@ -1,9 +1,10 @@
 package view;
 
+
 import java.util.Scanner;
 
 import controller.Controller;
-import model.data_structures.ILinkedList;
+import model.data_structures.ListaEncadenada;
 import model.vo.VOMovingViolations;
 
 public class MovingViolationsManagerView 
@@ -27,7 +28,7 @@ public class MovingViolationsManagerView
 				case 2:
 					System.out.println("Ingrese el código de la infracción:");
 					String violationCode = sc.next();
-					LinkedList<VOMovingViolations> violationsByCodeList = Controller.getMovingViolationsByViolationCode (violationCode);
+					ListaEncadenada<VOMovingViolations> violationsByCodeList = Controller.getMovingViolationsByViolationCode (violationCode);
 					System.out.println("Se encontraron "+ violationsByCodeList.getSize() + " elementos");
 					for (VOMovingViolations violations : violationsByCodeList) 
 					{
@@ -38,7 +39,7 @@ public class MovingViolationsManagerView
 				case 3:
 					System.out.println("Ingrese el indicador de Accidente que quiere consulta (No/Yes):");
 					String accidentIndicator = sc.next();
-					LinkedList<VOMovingViolations> violationsByAccidentsList = Controller.getMovingViolationsByAccident (accidentIndicator);
+					ListaEncadenada<VOMovingViolations> violationsByAccidentsList = Controller.getMovingViolationsByAccident (accidentIndicator);
 					System.out.println("Se encontraron "+ violationsByAccidentsList.getSize() + " elementos");
 					for (VOMovingViolations violations : violationsByAccidentsList) 
 					{
